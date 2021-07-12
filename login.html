@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<div class="container" id="container">
+		<div class="form-container sign-up-container">
+			<form action="#">
+				<h1> Personal Profile</h1>
+				<div class="avatar-wrapper">
+					<img class="profile-pic" src="" />
+					<div class="upload-button">
+						<i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+					</div>
+					<input id = "file-upload" class="file-upload" type="file" accept="image/*"/>
+				</div>
+				<button id = 'upload' onclick="changeAvatar()">Upload</button>
+				<input id = "NickName" type="NickName" placeholder="NickName" />
+				<button onclick="changeAction()">Change</button>
+			</form>
+		</div>
+		<div class="form-container sign-in-container">
+			<form action="#">
+				<h1>Sign in</h1>
+				<input id = "username" type="username" placeholder="Username" />
+				<input id = "password" type="password" placeholder="Password" />
+				<button onclick="userAction()">Sign In</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					<h1>Welcome Back!</h1>
+					<div >
+						<img id="avatar" src="image/person3.png" />
+					</div>
+					<h2 id = "new-nick-name"> Xuanyu </h1>
+					<button class="ghost" id="signIn">Log out</button>
+				</div>
+				<div class="overlay-panel overlay-right">
+					<h1>Hello, Friend!</h1>
+					<button class="ghost" id="signUp">Edit Profile</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+</body>
+<script src="login.js"></script>
+</html>
